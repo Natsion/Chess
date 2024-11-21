@@ -252,7 +252,7 @@ function onSnapEnd() {
 function updateStatus() {
     let status;
     if (game.in_checkmate()) {
-        status = `Game over, ${game.turn() === 'w' ? 'Black' : 'White'} is in checkmate.`;
+        status = `Game over, ${game.turn() === 'w' ? 'Black' : 'White'} won!`;
     } else if (game.in_draw()) {
         status = 'Game over, drawn position';
     } else if (gameOver) {
